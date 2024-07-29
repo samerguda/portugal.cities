@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مدن البرتغال</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            text-align: right;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: right;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .buttons {
+            margin-bottom: 20px;
+        }
+        .buttons button {
+            padding: 10px 15px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="buttons">
+        <button onclick="copyTable()">نسخ</button>
+        <button onclick="printTable()">طباعة</button>
+    </div>
+
+    <table id="citiesTable">
+        <thead>
+            <tr>
+                <th>المدينة</th>
+                <th>نبذة</th>
+                <th>رابط</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>لشبونة (Lisboa)</td>
+                <td>العاصمة وأكبر مدينة في البرتغال. معروفة بمعالمها السياحية مثل برج بيليم ودير جيرونيموس وحي ألفاما القديم.</td>
+                <td><a href="#">رابط</a></td>
+            </tr>
+            <tr>
+                <td>بورتو (Porto)</td>
+                <td>تقع في شمال البرتغال، مشهورة بنبيذ بورتها وجسر دوم لويس. تحتوي على مركز تاريخي يعد من مواقع التراث العالمي.</td>
+                <td><a href="#">رابط</a></td>
+            </tr>
+            <tr>
+                <td>فارو (Faro)</td>
+                <td>عاصمة منطقة الغرب، مشهورة بشواطئها الجميلة ومحمياتها الطبيعية. بوابة إلى منطقة الغرب السياحية.</td>
+                <td><a href="#">رابط</a></td>
+            </tr>
+            <tr>
+                <td>كويمبرا (Coimbra)</td>
+                <td>مدينة جامعية تاريخية، موطن لواحدة من أقدم الجامعات في أوروبا. تضم العديد من المواقع التاريخية مثل مكتبة الجامعة الشهيرة.</td>
+                <td><a href="#">رابط</a></td>
+            </tr>
+            <tr>
+                <td>افيرو (Aveiro)</td>
+                <td>تُعرف باسم "فينيسيا البرتغال" بسبب قنواتها المائية الجميلة وزوارق "موليسيروس" الملونة.</td>
+                <td><a href="#">رابط</a></td>
+            </tr>
+            <tr>
+                <td>براغا (Braga)</td>
+                <td>مدينة دينية قديمة تحتوي على العديد من الكنائس والمعالم الدينية مثل كاتدرائية براغا وضريح بوم جيسوس.</td>
+                <td><a href="#">رابط</a></td>
+            </tr>
+            <tr>
+                <td>فوشال (Funchal)</td>
+                <td>عاصمة جزر ماديرا، معروفة بمناظرها الطبيعية الخلابة وأجوائها المعتدلة. تشتهر بأسواقها وحدائقها.</td>
+                <td><a href="#">رابط</a></td>
+            </tr>
+            <tr>
+                <td>إيفورا (Évora)</td>
+                <td>مدينة تاريخية مدرجة ضمن مواقع التراث العالمي لليونسكو، تحتوي على العديد من المعالم الرومانية مثل المعبد الروماني وكاتدرائية إيفورا.</td>
+                <td><a href="#">رابط</a></td>
+            </tr>
+            <tr>
+                <td>فيزيلا (Vizela)</td>
+                <td>مدينة صغيرة تشتهر بينابيعها الحرارية ومرافق الاستجمام الصحية.</td>
+                <td><a href="#">رابط</a></td>
+            </tr>
+            <tr>
+                <td>جيماريش (Guimarães)</td>
+                <td>تُعتبر مهد البرتغال حيث وُلد أول ملوك البرتغال. تحتوي على مركز تاريخي محفوظ جيدا ويعتبر من مواقع التراث العالمي.</td>
+                <td><a href="#">رابط</a></td>
+            </tr>
+            <tr>
+                <td>فيلا نوفا دي جايا (Vila Nova de Gaia)</td>
+                <td>تقع عبر نهر دورو من بورتو، معروفة بأقبية النبيذ ومصانع النبيذ الشهيرة.</td>
+                <td><a href="#">رابط</a></td>
+            </tr>
+            <tr>
+                <td>سيتوبال (Setúbal)</td>
+                <td>ميناء صناعي مهم مع مشاهد طبيعية جميلة وحديقة أرابيدا الطبيعية. معروفة أيضا بمأكولاتها البحرية.</td>
+                <td><a href="#">رابط</a></td>
+            </tr>
+            <tr>
+                <td>سانتاريم (Santarém)</td>
+                <td>مدينة تاريخية تحتوي على العديد من الكنائس القديمة ومعالم القرون الوسطى. تُعرف بجمال موقعها المطل على نهر تاغوس.</td>
+                <td><a href="#">رابط</a></td>
+            </tr>
+            <tr>
+                <td>ليريا (Leiria)</td>
+                <td>مدينة جميلة تحتضن قلعة ليريا التاريخية. تقع بالقرب من الأديرة الشهيرة مثل دير باتالها.</td>
+                <td><a href="#">رابط</a></td>
+            </tr>
+            <tr>
+                <td>فيسيو (Viseu)</td>
+                <td>تقع في منطقة داخلية، معروفة بتاريخها العريق وكاتدرائية فيسيو. تُعتبر مركزا للفنون والثقافة.</td>
+                <td><a href="#">رابط</a></td>
+            </tr>
+            <tr>
+                <td>بارسيلوس (Barcelos)</td>
+                <td>مدينة صغيرة معروفة بسوقها الأسبوعي وبالتاريخ الغني للأساطير المحلية مثل أسطورة الديك البرتغالي.</td>
+                <td><a href="#">رابط</a></td>
+            </tr>
+            <tr>
+                <td>بيجا (Beja)</td>
+                <td>تقع في منطقة ألنتيجو، معروفة بقلعتها والكنيسة القوطية. تُعتبر مركزا زراعيا مهما.</td>
+                <td><a href="#">رابط</a></td>
+            </tr>
+            <tr>
+                <td>إشتوريل (Estoril)</td>
+                <td>منتجع ساحلي بالقرب من لشبونة، معروف بكازينو إشتوريل وشواطئه الجميلة. يُعتبر مكانا فاخرا للسياحة والاستجمام.</td>
+                <td><a href="#">رابط</a></td>
+            </tr>
+            <tr>
+                <td>تومار (Tomar)</td>
+                <td>مدينة تاريخية تحتوي على دير المسيح، أحد مواقع التراث العالمي. كانت مقر فرسان الهيكل في البرتغال.</td>
+                <td><a href="#">رابط</a></td>
+            </tr>
+            <tr>
+                <td>ألبيفرا (Albufeira)</td>
+                <td>مدينة ساحلية في منطقة الغرب، مشهورة بشواطئها الرملية وحياتها الليلية النشطة. تُعتبر وجهة سياحية مفضلة.</td>
+                <td><a href="#">رابط</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        function copyTable() {
+            var range = document.createRange();
+            range.selectNode(document.getElementById("citiesTable"));
+            window.getSelection().removeAllRanges();
+            window.getSelection().addRange(range);
+            document.execCommand("copy");
+            alert("تم نسخ الجدول");
+        }
+
+        function printTable() {
+            var divToPrint = document.getElementById("citiesTable");
+            var newWin = window.open("");
+            newWin.document.write(divToPrint.outerHTML);
+            newWin.print();
+            newWin.close();
+        }
+    </script>
+</body>
+</html>
